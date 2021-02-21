@@ -1,11 +1,11 @@
 # IQair-App
 This project is a web application used to find the air pollution in a given city. It uses IQAir's AirVisual API with 4 GET requests. The functions of these requests are as follows:
-    - List supported countries
-    - List supported states in a country
-    - List supported cities in a state
-    - Get Specified city data
+* List supported countries
+* List supported states in a country
+* List supported cities in a state
+* Get Specified city data
 ## Motivation
-My primary motivation behind this project was to enhance my skills in JavaScript and learn React. Before this project I had used Node and Express to create simple web server applications but I had never added a React client
+My primary motivation behind this project was to enhance my skills in JavaScript and learn React. Before this project I had used Node and Express.
 ### Install dependencies for server
 npm install
 ### Install dependencies for client
