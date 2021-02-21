@@ -2,23 +2,6 @@ const express = require('express')
 const axios = require('axios')
 const router = express.Router()
 
-const NEAREST_URL = 'http://api.airvisual.com/v2/nearest_city?'
-
-router.get('/nearest', async(req, res, next) => {
-    
-    try {
-        const params = new URLSearchParams({
-            key: process.env.IQAIR_API_KEY,
-        })
-        const data = await axios.get(`${NEAREST_URL}${params}`)
-        res.json(data)
-        
-    } catch (error) {
-        return next(error)
-    }
-   
-})
-
 const COUNTRIES_URL = 'http://api.airvisual.com/v2/countries?'
 
 router.get('/countries', async(req, res, next) => {
